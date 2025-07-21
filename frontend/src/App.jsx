@@ -1,22 +1,20 @@
+
 import React from 'react';
-import { useState } from 'react'
-import Navbar from './components/Navbar';
-import Hero from './pages/Hero';
-import TrendingPitches from './pages/TrendingPitches';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Login from './pages/Login.jsx';
+import Home from './pages/Home.jsx';
+import Register from './pages/Register.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <Navbar />
-    <Hero />
-    <TrendingPitches />
-    <Footer />
-    </>
-    
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
