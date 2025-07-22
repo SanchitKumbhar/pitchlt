@@ -39,12 +39,12 @@ const cards = [
 
 function TrendingPitches() {
   return (
-    <div className="py-10 px-6 bg-white mx-20">
+    <div className="py-10 px-7 md:px-6 lg:px-20 bg-white">
       <h2 className="text-2xl font-semibold text-gray-800 mb-6">Trending Pitches</h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-9">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full">
         {cards.map((card, index) => (
-          <div key={index} className="bg-gray-50 border rounded-xl shadow-sm overflow-hidden flex flex-col mb-3">
+          <div key={index} className="bg-gray-50 border rounded-xl shadow-sm overflow-hidden flex flex-col m-1">
             {/* Image */}
             <img src={card.image} alt={card.title} className="w-full h-40 object-cover" />
 
