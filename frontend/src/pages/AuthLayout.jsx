@@ -11,20 +11,22 @@ const AuthLayout = ({ children }) => {
 
   return (
     <div className="flex flex-col md:flex-row h-screen">
+      
       {/* Left Section */}
-      <div className="w-full md:w-1/2 bg-gradient-to-b from-red-500 to-blue-700 text-white flex flex-col justify-center items-center p-6 md:p-10">
-        <div className="text-center max-w-sm md:max-w-md">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">PitchIt Forward</h1>
-          <p className="text-base md:text-lg">
-            Empowering student entrepreneurs to showcase their innovative ideas and connect with opportunities.
-          </p>
-          <img
-            src={loginimg}
-            alt="PitchIt"
-            className="mt-3 h-[200px] md:h-[300px] w-auto rounded-2xl shadow-lg object-cover shadow-black"
-          />
-        </div>
-      </div>
+<div className="w-full md:w-1/2 bg-gradient-to-b from-red-500 to-blue-700 text-white flex justify-center items-center p-6 md:p-10">
+  <div className="flex flex-col items-center justify-center text-center max-w-sm md:max-w-md">
+    <h1 className="text-3xl md:text-4xl font-bold mb-2">PitchIt Forward</h1>
+    <p className="text-base md:text-lg">
+      Empowering student entrepreneurs to showcase their innovative ideas and connect with opportunities.
+    </p>
+    <img
+      src={loginimg}
+      alt="PitchIt"
+      className="mt-3 h-[200px] md:h-[300px] w-auto rounded-2xl shadow-lg object-cover shadow-black"
+    />
+  </div>
+</div>
+
 
       {/* Right Section */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center px-6 py-10 md:p-10 bg-white">
