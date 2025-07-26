@@ -17,8 +17,6 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/my-pitches" element={<MyPitches />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/rp" element={<RecentPitches />} />
-
         
 
       </Routes>
