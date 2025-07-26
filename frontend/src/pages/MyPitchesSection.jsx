@@ -1,3 +1,4 @@
+
 import React from "react";
 import { FaSearch, FaPlus, FaArrowUp, FaUsers, FaEdit, FaEye } from "react-icons/fa";
 
@@ -66,7 +67,7 @@ const MyPitchesSection = () => {
   ];
 
   return (
-    <div className="p-4 sm:p-6 md:p-10 lg:px-10 max-w-7xl mx-auto">
+    <div className="p-4 sm:p-6 md:p-10 lg:px-25 w-full mx-auto">
       <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">
         My Pitches
       </h2>
