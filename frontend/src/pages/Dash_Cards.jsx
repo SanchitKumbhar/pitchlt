@@ -16,6 +16,7 @@ import {
   Badge,
   BarChart2,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const data = [
   { month: "Feb", count: 3 },
@@ -30,8 +31,10 @@ const Dash_Cards = () => {
   return (
     // <div className="w-full px-4 sm:px-6 md:px-10 xl:px-20">
     <div className="w-full px-4 sm:px-6 md:px-11 p-4">
+      <h2 className="text-3xl font-bold text-gray-800 mb-2">Dashboard</h2>
       {/* Top Stats */}
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 pt-2">
+        
         {/* Card 1 */}
         <div className="bg-white shadow-md rounded-xl border border-gray-200 p-6 flex flex-col justify-between min-h-[160px]">
           <div>
@@ -94,7 +97,9 @@ const Dash_Cards = () => {
           <div className="flex-1 flex flex-col items-center justify-center gap-2">
             <button className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
               <PlusCircle className="w-5 h-5" />
+              <Link to="/create-pitch">
               <span>Create New Pitch</span>
+              </Link>
             </button>
             <p className="text-sm text-gray-500 text-center">
               Start a fresh pitch idea right away.

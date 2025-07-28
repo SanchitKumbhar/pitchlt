@@ -1,6 +1,7 @@
 
 import React from "react";
 import { FaSearch, FaPlus, FaArrowUp, FaUsers, FaEdit, FaEye } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const MyPitchesSection = () => {
   const pitches = [
@@ -89,7 +90,9 @@ const MyPitchesSection = () => {
         {/* Create Button */}
         <button className="flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 w-full md:w-auto">
           <FaPlus />
+          <Link to= "/create-pitch">
           <span>Create New Pitch</span>
+          </Link>
         </button>
       </div>
 

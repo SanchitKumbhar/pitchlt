@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { FaUserCircle, FaSearch, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -17,22 +15,24 @@ const Navbar2 = () => {
       </div>
 
       {/* Desktop Nav Links */}
-      {/* <div className="hidden md:flex space-x-6">
-        <a href="#" className="text-gray-700 hover:text-blue-600">My Pitches</a>
-        <a href="#" className="text-gray-700 hover:text-blue-600">Joined Teams</a>
-        <a href="#" className="text-gray-700 hover:text-blue-600">Explore</a>
-        <a href="#" className="text-gray-700 hover:text-blue-600">Create Pitch</a>
-        <a href="#" className="text-gray-700 hover:text-blue-600">Dashboard</a>
-      </div> */}
 
       <div className="hidden md:flex space-x-6">
-  <Link to="/my-pitches" className="text-gray-700 hover:text-blue-600">My Pitches</Link>
-  <Link to="/joined-teams" className="text-gray-700 hover:text-blue-600">Joined Teams</Link>
-  <Link to="/explore" className="text-gray-700 hover:text-blue-600">Explore</Link>
-  <Link to="/create-pitch" className="text-gray-700 hover:text-blue-600">Create Pitch</Link>
-  <Link to="/dashboard" className="text-gray-700 hover:text-blue-600">Dashboard</Link>
-</div>
-
+        <Link to="/my-pitches" className="text-gray-700 hover:text-blue-600">
+          My Pitches
+        </Link>
+        <Link to="/joined-teams" className="text-gray-700 hover:text-blue-600">
+          Joined Teams
+        </Link>
+        <Link to="/explore" className="text-gray-700 hover:text-blue-600">
+          Explore
+        </Link>
+        <Link to="/create-pitch" className="text-gray-700 hover:text-blue-600">
+          Create Pitch
+        </Link>
+        <Link to="/dashboard" className="text-gray-700 hover:text-blue-600">
+          Dashboard
+        </Link>
+      </div>
 
       {/* Desktop Search field and Profile */}
       <div className="hidden md:flex items-center space-x-4">
@@ -73,23 +73,32 @@ const Navbar2 = () => {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-md md:hidden z-50 px-4 py-4 space-y-4">
-          {/* <div className="flex flex-col space-y-3">
-            <a href="#" className="text-gray-700 hover:text-blue-600">My Pitches</a>
-            <a href="#" className="text-gray-700 hover:text-blue-600">Joined Teams</a>
-            <a href="#" className="text-gray-700 hover:text-blue-600">Explore</a>
-            <a href="#" className="text-gray-700 hover:text-blue-600">Create Pitch</a>
-            <a href="#" className="text-gray-700 hover:text-blue-600">Dashboard</a>
-            <a href="#" className="text-gray-700 hover:text-blue-600">My Profile</a> 
-          </div> */}
-
           <div className="flex flex-col space-y-3">
-  <Link to="/my-pitches" className="text-gray-700 hover:text-blue-600">My Pitches</Link>
-  <Link to="/joined-teams" className="text-gray-700 hover:text-blue-600">Joined Teams</Link>
-  <Link to="/explore" className="text-gray-700 hover:text-blue-600">Explore</Link>
-  <Link to="/create-pitch" className="text-gray-700 hover:text-blue-600">Create Pitch</Link>
-  <Link to="/dashboard" className="text-gray-700 hover:text-blue-600">Dashboard</Link>
-</div>
-
+            <Link
+              to="/my-pitches"
+              className="text-gray-700 hover:text-blue-600"
+            >
+              My Pitches
+            </Link>
+            <Link
+              to="/joined-teams"
+              className="text-gray-700 hover:text-blue-600"
+            >
+              Joined Teams
+            </Link>
+            <Link to="/explore" className="text-gray-700 hover:text-blue-600">
+              Explore
+            </Link>
+            <Link
+              to="/create-pitch"
+              className="text-gray-700 hover:text-blue-600"
+            >
+              Create Pitch
+            </Link>
+            <Link to="/dashboard" className="text-gray-700 hover:text-blue-600">
+              Dashboard
+            </Link>
+          </div>
         </div>
       )}
     </nav>
@@ -97,5 +106,3 @@ const Navbar2 = () => {
 };
 
 export default Navbar2;
-
-
