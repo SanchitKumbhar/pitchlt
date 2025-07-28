@@ -15,6 +15,7 @@ const Dashboard = () => {
       <main className="flex-grow">
         {/* Dashboard Cards */}
         <section className="px-4 sm:px-6 md:px-10 pt-6">
+          
           <Dash_Cards />
         </section>
 
